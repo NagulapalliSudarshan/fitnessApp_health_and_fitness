@@ -1,0 +1,7 @@
+{% extends "blog/base.html" %}
+{% block content%}
+    <h2>Logged Out successfully....</h2>
+    <div class="form-group">
+        Login in again<a href="{% url 'login' %}" class="ml-2">Sign In</a>
+    </div>
+{% endblock content %}

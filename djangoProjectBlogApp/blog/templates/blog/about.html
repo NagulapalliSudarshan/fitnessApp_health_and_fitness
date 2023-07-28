@@ -1,0 +1,27 @@
+{% extends "blog/base.html" %}
+<!-- <!DOCTYPE html>
+<html>
+    <head>
+        {% if title %}
+            <title>Blog {{title}}</title>
+        {% else %}
+            <title>Blog about-own</title>
+        {% endif %}
+        <style>
+            *{
+                background-color: violet;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Blog About!</h1>
+    </body>
+</html> -->
+
+<!-- alternative -->
+
+{% block content%}
+<h1>About</h1>
+<hr>
+<p>Health and fitness website is a community website in which fitness trainers from different fields can share their views on fitness through publishing posts on the blog. The fitness freak has to register and then login to publish a post.</p>
+{% endblock content %}

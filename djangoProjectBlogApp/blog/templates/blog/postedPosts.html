@@ -1,0 +1,57 @@
+{% extends "blog/base.html" %}
+
+<!-- <!DOCTYPE html>
+<html>
+    <head>
+        {% if title %}
+            <title>Blog {{title}}</title>
+        {% else %}
+            <title>Blog Posts-own</title>
+        {% endif %}
+        <style>
+            *{
+                background-color: lightcoral;
+            }
+            .Posts{
+                border : 5px solid black ;
+                padding : 10px;
+                margin : auto;
+                width :60%;
+                text-align : center;
+                color : black;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Blog Posts!</h1>
+        <hr>
+        <div>
+            {% for i in posts %}
+            <div class="Posts">
+                <h1>{{i.author}}</h1>
+                <h2>{{i.title}}</h2>
+                <h3>{{i.content}}</h3>
+                <span>{{i.date}}</span>
+            </div>
+            <hr>
+            {% endfor %}
+        </div>
+    </body>
+</html> -->
+
+{% block content%}
+<h1>Blog Posts!</h1>
+<hr>
+{% for post in posts %}
+<article class="media content-section">
+    <div class="media-body">
+      <div class="article-metadata">
+        <a class="mr-2" href="#">{{post.author}}</a>
+        <small class="text-muted">{{post.date}}</small>
+      </div>
+      <h2><a class="article-title" href="{% url 'posts-detail' post.id %}">{{ post.title }}</a></h2>
+      <p class="article-content">{{ post.content }}</p>
+    </div>
+  </article>
+{% endfor %}
+{% endblock content%}

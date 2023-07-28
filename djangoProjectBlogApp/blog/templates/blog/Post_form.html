@@ -1,0 +1,20 @@
+{% extends "blog/base.html" %}
+{% block content%}
+    <div class="form">
+        <form method="post">
+            {% csrf_token %}
+            <fieldset class="form-group">
+                <strong class="border-bottom mb-4">Blog Post</strong>
+                <hr>
+                {{ form.as_p }}
+            </fieldset>
+            <div class="form-group">
+                <button class="btn btn-outline-info" type="submit">
+                    Submit
+                </button>
+            </div>
+            <hr>
+        </form>
+    </div>
+
+{% endblock content %}
