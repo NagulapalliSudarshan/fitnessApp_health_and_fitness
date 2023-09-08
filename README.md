@@ -4,11 +4,11 @@ It allows users to create, read, update, and delete fitness-related blog posts. 
 ****Features****  
 User Registration and Authentication  
 Create, Read, Update, and Delete Blog Posts  
-User Profiles
-Search Functionality
-Responsive Design
-****Technologies Used****
-Django
-HTML/CSS
-Bootstrap
-SQLite
+User Profiles  
+Search Functionality  
+Responsive Design  
+****Technologies Used****  
+Django  
+HTML/CSS  
+Bootstrap  
+SQLite  
